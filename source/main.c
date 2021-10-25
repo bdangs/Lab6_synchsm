@@ -7,6 +7,8 @@
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
  */
+
+// demo link : https://drive.google.com/file/d/1DxcjrzU8u1X8imdgK02lS6oYNTiE28Ag/view?usp=drivesdk
 #include <stdio.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -100,7 +102,7 @@ int main(void) {
 	TimerOn();
     /* Insert your solution below */
     while (1) {
-	PORTB = ~B;
+	PORTB = B;
 	Tick();
 	while (!TimerFlag);
 	TimerFlag = 0;
